@@ -37,8 +37,6 @@ Seperate instructions are provided to get GConnect working also.
 9. Run application using `python /catalog/app.py`
 10. Access the application locally using http://localhost:5000
 
-*Optional step(s)
-
 ## Using Google Login
 To get the Google login working there are a few additional steps:
 
