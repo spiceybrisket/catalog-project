@@ -33,7 +33,7 @@ Seperate instructions are provided to get GConnect working also.
 5. Navigate to `cd/vagrant` as instructed in terminal
 6. The app imports requests which is not on this vm. Run sudo pip install requests
 7. Setup application database `python /catalog/database_setup.py`
-8. *Insert fake data `python /catalog/db_seed.py`
+8. Insert fake data `python /catalog/db_seed.py`
 9. Run application using `python /catalog/app.py`
 10. Access the application locally using http://localhost:5000
 
