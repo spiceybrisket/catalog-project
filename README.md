@@ -33,8 +33,8 @@ Seperate instructions are provided to get GConnect working also.
 5. Navigate to `cd/vagrant` as instructed in terminal
 6. The app imports requests which is not on this vm. Run sudo pip install requests
 7. Setup application database `python /catalog/database_setup.py`
-8. *Insert fake data `python /item-catalog/db_seed.py`
-9. Run application using `python /item-catalog/app.py`
+8. *Insert fake data `python /catalog/db_seed.py`
+9. Run application using `python /catalog/app.py`
 10. Access the application locally using http://localhost:5000
 
 *Optional step(s)
@@ -47,14 +47,14 @@ To get the Google login working there are a few additional steps:
 3. Go to Credentials
 4. Select Create Crendentials > OAuth Client ID
 5. Select Web application
-6. Enter name 'Item-Catalog'
+6. Enter name 'catalog'
 7. Authorized JavaScript origins = 'http://localhost:5000'
 8. Authorized redirect URIs = 'http://localhost:5000/login' && 'http://localhost:5000/gconnect'
 9. Select Create
 10. Copy the Client ID and paste it into the `data-clientid` in login.html
 11. On the Dev Console Select Download JSON
 12. Rename JSON file to client_secrets.json
-13. Place JSON file in item-catalog directory that you cloned from here
+13. Place JSON file in catalog directory that you cloned from here
 14. Run application using `python /catalog/application.py`
 
 ## JSON Endpoints
