@@ -1,0 +1,16 @@
+body {
+  background-color: #292929;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
+
+.text-ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
