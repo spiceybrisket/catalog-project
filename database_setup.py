@@ -65,5 +65,5 @@ class Course(Base):
 
 
 if __name__ == '__main__':
-    engine = create_engine("sqlite:///catalog.db")
+    engine = create_engine('postgresql://catalog:frogstomp@localhost/catalog')
     Base.metadata.create_all(engine)
