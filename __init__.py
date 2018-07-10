@@ -17,14 +17,14 @@ import requests
 
 app = Flask(__name__)
 
-engine = create_engine('postgresql://catalog:DB-PASSWORD@localhost/catalog')
+engine = create_engine('postgresql://catalog:catalog@localhost/catalog')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 # Google+ client id and application name
 CLIENT_ID = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_id']
+    open('/var/www/catalog/catalog/client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Udacity Nanodegree Catalog"
 
 
@@ -438,4 +438,4 @@ def api_view_course(course_id):
 if __name__ == '__main__':
     app.secret_key = 'secret'
     app.debug = True
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0')
